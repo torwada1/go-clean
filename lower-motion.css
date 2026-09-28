@@ -1,0 +1,23 @@
+/* Subtle accents throughout the lower page, animated once on arrival. */
+main>.section{position:relative;isolation:isolate}
+.section-vfx{position:absolute;inset:0;overflow:hidden;z-index:-1;pointer-events:none}
+.section-vfx span{position:absolute;width:180px;height:180px;border-radius:50%;border:1px solid #0866ff22;box-shadow:inset 8px 8px 22px #b6dcff25,inset -12px -12px 25px #0866ff12;background:radial-gradient(circle at 30% 28%,#b2d8ff33,transparent 65%);inset-inline-end:-100px;top:12%}
+.section-vfx span+span{width:70px;height:70px;top:auto;bottom:8%;inset-inline-end:auto;inset-inline-start:-30px}
+.night .section-vfx span,.contact .section-vfx span{border-color:#b3d4ff33;background:radial-gradient(circle at 30% 28%,#b2d8ff22,transparent 70%)}
+.vfx-arrived .section-vfx span{animation:accent-arrive 2.8s ease-out both}
+.vfx-arrived .section-vfx span+span{animation-duration:3.4s}
+.vfx-arrived .motion-item{animation:item-arrive .8s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--item-delay,0ms)}
+.steps article,.reasons article,.gallery figure{transition:transform .25s ease,box-shadow .3s ease;transform-style:preserve-3d}
+.steps article>span{display:inline-block;text-shadow:0 3px 0 #0866ff18,0 8px 18px #0866ff15}
+.steps article{border-top:2px solid #0866ff55}
+.reasons article>span{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;flex-shrink:0;border-radius:12px;background:#0866ff10;box-shadow:inset 0 1px 0 #ffffff55,0 7px 15px #0866ff10}
+.gallery figure{border-radius:4px}.gallery figure:hover{box-shadow:0 18px 32px #0866ff14}
+.socials a{transition:transform .25s,color .25s,background .25s}.socials a:hover{transform:translateY(-4px);background:#ffffff15}
+.contact-details p{border-radius:6px;transition:background .25s}.contact-details p:hover{background:#ffffff10}
+.package::after{content:"";position:absolute;inset:0;border-radius:inherit;border:1px solid #a9cfff00;pointer-events:none}
+.vfx-arrived .featured::after{animation:package-glow 2.5s ease-out both}
+@keyframes accent-arrive{from{opacity:0;transform:translateY(30px) scale(.8)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes item-arrive{from{opacity:.4;translate:0 16px}to{opacity:1;translate:0 0}}
+@keyframes package-glow{0%{border-color:#a9cfff00;box-shadow:0 0 0 #0866ff00}40%{border-color:#d2e8ffbb;box-shadow:0 0 28px #599bff55}100%{border-color:#a9cfff33;box-shadow:0 0 0 #0866ff00}}
+@media(max-width:760px){.section-vfx{opacity:.55}.section-vfx span{width:120px;height:120px;inset-inline-end:-85px}.vfx-arrived .motion-item{animation-duration:.5s}.reasons article>span{width:36px;height:36px}}
+@media(prefers-reduced-motion:reduce){.vfx-arrived .section-vfx span,.vfx-arrived .motion-item,.vfx-arrived .featured::after{animation:none!important}.socials a:hover{transform:none}.motion-item{translate:none!important}}

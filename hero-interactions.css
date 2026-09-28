@@ -1,0 +1,12 @@
+.hero-media>.media{transition:transform .35s ease,box-shadow .35s ease}
+.hero-media>.media>img{transition:transform .5s ease}
+.hero-media>.media.hero-hover{transform:perspective(1100px) rotateX(var(--hero-rx,0deg)) rotateY(var(--hero-ry,0deg)) translateY(-5px);box-shadow:0 30px 60px #0006,0 0 28px #338dff44}
+.hero-media>.media.hero-hover>img{transform:scale(1.035)}
+.hero-media>.media.hero-hover::after{inset:0;animation:none;transform:none;background:radial-gradient(circle at var(--light-x,50%) var(--light-y,50%),#ffffff22,transparent 55%)}
+.media-caption{transition:transform .3s ease,box-shadow .3s ease,background .3s ease;transform-origin:center}
+.media-caption.hero-hover{transform:perspective(900px) rotateX(var(--hero-rx,0deg)) rotateY(var(--hero-ry,0deg)) translateY(-4px);background:#0759df;box-shadow:0 15px 32px #0866ff55}
+.media-caption>span:last-child{display:inline-block;transition:transform .45s ease}
+.media-caption.hero-hover>span:last-child{transform:rotate(100deg) scale(1.3)}
+.vfx-orbs span,.section-vfx span,.water-layer span{transition:scale .35s ease,filter .35s ease,box-shadow .35s ease}
+.vfx-orbs span.bubble-near,.section-vfx span.bubble-near,.water-layer span.bubble-near{scale:1.4;filter:brightness(1.4);box-shadow:inset -5px -8px 18px #0866ff33,inset 4px 4px 12px #ffffff77,0 0 25px #499fff66}
+@media(prefers-reduced-motion:reduce){.hero-media>.media.hero-hover,.hero-media>.media.hero-hover>img,.media-caption.hero-hover,.media-caption.hero-hover>span:last-child{transform:none!important}.bubble-near{scale:1!important;filter:none!important}}
