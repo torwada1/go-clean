@@ -12,3 +12,5 @@ html[data-theme=dark] .why-section{background:linear-gradient(145deg,#101d30,#0d
 
 .orbit-counter{direction:ltr}.orbit-card>span{pointer-events:none}@media(max-width:760px){.hero h1{font-size:40px}.hero .lead{font-size:16px}.hero{padding-top:34px}.hero-note{margin-top:24px}.hero-media.logo-scene{margin-top:0}}
 .orbit-ring{pointer-events:none}.orbit-card{pointer-events:auto}
+
+.orbit-dots{flex-wrap:wrap;max-width:650px;margin-inline:auto}.video-cover{position:relative;overflow:hidden}.video-cover>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.video-cover>.play,.video-cover>small{position:relative;z-index:1}.video-cover:has(img)>small{background:#07192cbf;padding:6px;border-radius:6px}
