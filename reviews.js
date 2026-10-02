@@ -3,8 +3,8 @@
 const section=document.querySelector('#reviews');if(!section)return;
 const list=section.querySelector('.customer-reviews-grid'),state=section.querySelector('.reviews-state');
 const en=()=>document.documentElement.lang==='en';
-fetch('https://go-clean-bookings.mohamedood48.chatgpt.site/api/reviews',{credentials:'omit'}).then(async r=>{if(!r.ok)throw Error();return r.json();}).then(data=>{
- const rows=data.reviews;if(!rows.length){state.textContent=en()?'Tried our service? Share your feedback. Your experience matters to us.':'جرّبت خدمتنا؟ شاركنا رأيك، تجربتك تفرق معانا.';return;}
+fetch('https://go-clean-reservations.ballingerkyle56975.chatgpt.site/api/reviews',{credentials:'omit'}).then(async r=>{if(!r.ok)throw Error();return r.json();}).then(data=>{
+ const rows=(data.reviews || []).map(r=>({...r,rating:r.rating ?? r.stars}));if(!rows.length){state.textContent=en()?'Tried our service? Share your feedback. Your experience matters to us.':'جرّبت خدمتنا؟ شاركنا رأيك، تجربتك تفرق معانا.';return;}
  state.textContent='';list.classList.add('review-orbit');list.setAttribute('role','region');list.setAttribute('aria-roledescription','carousel');
  const stage=document.createElement('div');stage.className='review-orbit-stage';const ring=document.createElement('div');ring.className='review-orbit-ring';stage.append(ring);list.append(stage);
  const controls=document.createElement('div');controls.className='review-orbit-controls';

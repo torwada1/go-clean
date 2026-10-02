@@ -4,7 +4,7 @@ window.GO_CLEAN_CONFIG = {
   area: "القاهرة — التجمع الخامس",
   hours: "حسب الاتفاق والحجز المسبق",
   whatsappNumber: "201041958966", // الرقم الدولي بأرقام إنجليزية فقط، بدون + أو مسافات.
-  bookingUrl: "https://go-clean-bookings.mohamedood48.chatgpt.site/", // رابط حجز https:// اختياري؛ إذا تركته فارغًا يستخدم واتساب.
+  bookingUrl: "https://go-clean-reservations.ballingerkyle56975.chatgpt.site/", // رابط حجز https:// اختياري؛ إذا تركته فارغًا يستخدم واتساب.
   instagramUrl: "https://www.instagram.com/go.cleanco/", // https://www.instagram.com/YOUR_USERNAME/
   tiktokUrl: "https://www.tiktok.com/@go.cleanco",
   linktreeUrl: "https://linktr.ee/Go.Cleanco",
