@@ -10,7 +10,7 @@ window.GO_CLEAN_CONFIG = {
   linktreeUrl: "https://linktr.ee/Go.Cleanco",
   facebookUrl: "https://www.facebook.com/profile.php?id=61594534674119", // https://www.facebook.com/YOUR_PAGE/
   bookingMessage: "أهلًا Go Clean Co.، حابب أحجز غسلة لعربيتي.",
-  prices: { interior: "250", exterior: "250", full: "400" }, // مثال: "250"، العملة ج.م
+  prices: { interior: "250", exterior: "250", full: "450" }, // مثال: "250"، العملة ج.م
   images: {
     logo: "assets/logo-transparent.webp", // ضع اللوجو داخل assets ثم اكتب مثلًا assets/logo-transparent.webp
     hero: "assets/exterior-after-angle.webp", // assets/hero.jpg — يفضل صورة أفقية عالية الجودة
