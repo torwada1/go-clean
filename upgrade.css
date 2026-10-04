@@ -14,3 +14,5 @@ html[data-theme=dark] .why-section{background:linear-gradient(145deg,#101d30,#0d
 .orbit-ring{pointer-events:none}.orbit-card{pointer-events:auto}
 
 .orbit-dots{flex-wrap:wrap;max-width:650px;margin-inline:auto}.video-cover{position:relative;overflow:hidden}.video-cover>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.video-cover>.play,.video-cover>small{position:relative;z-index:1}.video-cover:has(img)>small{background:#07192cbf;padding:6px;border-radius:6px}
+
+.price-offer{display:flex;align-items:center;gap:18px;padding:20px 24px;margin:0 0 28px;border:1px solid #52c7b7;border-radius:16px;background:#e9fbf5;color:#113e36}.price-offer>strong{flex-shrink:0;background:#115e4e;color:#fff;padding:10px 16px;border-radius:12px;font-size:clamp(20px,3vw,28px);line-height:1.4}.price-offer p{margin:0 0 4px;font-weight:700;color:#113e36}.price-offer span{color:#28594f;font-size:15px}@media(max-width:480px){.price-offer{padding:16px;gap:12px;flex-wrap:wrap}}
