@@ -1,0 +1,1 @@
+import './globals.css';export const metadata={title:'Go Clean | الحجز',description:'احجز غسيل عربيتك في مكانك'};export default function Layout({children}:{children:React.ReactNode}){return <html lang="ar" dir="rtl"><body>{children}</body></html>}

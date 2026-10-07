@@ -1,0 +1,1 @@
+name = "gocleanco-bookings"\npages_build_output_dir = "./source/pages-dist"\ncompatibility_date = "2026-05-15"\ncompatibility_flags = ["nodejs_compat"]\n
