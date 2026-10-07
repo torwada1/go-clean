@@ -1,7 +1,7 @@
 const arabicDigits = '٠١٢٣٤٥٦٧٨٩';
 const persianDigits = '۰۱۲۳۴۵۶۷۸۹';
 
-export const egyptianPhoneMessage = 'اكتب رقم موبايل مصري صحيح يبدأ بـ 010 أو 011 أو 012 أو 015.';
+export const egyptianPhoneMessage = 'رقم غير صحيح، لازم يكون رقم مصري بس.';
 
 export function normalizeEgyptianMobile(value: string): string | null {
   const ascii = value
