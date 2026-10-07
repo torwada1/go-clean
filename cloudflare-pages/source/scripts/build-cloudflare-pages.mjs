@@ -22,7 +22,7 @@ try {
 
 const worker = `import app from './server/index.js';
 
-const appRoute = (path) => path === '/booking' || path.startsWith('/booking/') || path === '/admin' || path.startsWith('/admin/') || path === '/reviews' || path.startsWith('/reviews/') || path === '/api' || path.startsWith('/api/') || path.startsWith('/_next/') || path.startsWith('/_vinext/');
+const appRoute = (path) => path === '/booking' || path.startsWith('/booking/') || path === '/admin' || path.startsWith('/admin/') || path === '/reviews' || path.startsWith('/reviews/') || path === '/api' || path.startsWith('/api/');
 
 export default {
   async fetch(request, env, ctx) {
