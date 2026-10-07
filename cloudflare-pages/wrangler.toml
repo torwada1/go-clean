@@ -10,4 +10,4 @@ database_id = "85b20abc-3c97-498b-a486-e902109a537e"
 remote = true
 
 [vars]
-BOOKING_ENABLED = "false"
+BOOKING_ENABLED = "true"
