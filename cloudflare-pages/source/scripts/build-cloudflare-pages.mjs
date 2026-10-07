@@ -12,6 +12,7 @@ await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(resolve(root, 'dist/client'), output, { recursive: true });
 await cp(resolve(root, 'dist/server'), resolve(output, 'server'), { recursive: true });
+await rm(resolve(output, 'server', 'wrangler.json'), { force: true });
 await cp(resolve(root, 'marketing'), output, { recursive: true, force: true });
 try {
   await cp(resolve(root, '..', '..', 'assets'), resolve(output, 'assets'), { recursive: true, force: true });
