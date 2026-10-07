@@ -17,18 +17,6 @@
   const whatsapp = message => /^\d{7,15}$/.test(phone) ? `https://wa.me/${phone}?text=${encodeURIComponent(message)}` : '';
   document.querySelectorAll('[data-link]').forEach(link => {
     const type = link.dataset.link;
-    if (type === 'book' || link.dataset.bookingPaused === 'true') {
-      link.href = '#booking-paused';
-      link.removeAttribute('target');
-      link.removeAttribute('rel');
-      link.textContent = type === 'book' ? 'الحجز متوقف مؤقتًا' : 'الباقات الشهرية متوقفة مؤقتًا';
-      link.addEventListener('click', event => {
-        event.preventDefault();
-        document.getElementById('booking-paused')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        notify('استقبال الحجوزات متوقف مؤقتًا. تابعنا هنا لمعرفة موعد عودة الحجز.');
-      });
-      return;
-    }
     const message = (config.bookingMessage || 'أهلًا، حابب أحجز غسلة.') + (link.dataset.package ? ` الباقة: ${link.dataset.package}` : '');
     const urls = { book: safeUrl(config.bookingUrl) || whatsapp(message), whatsapp: whatsapp(message), instagram: safeUrl(config.instagramUrl), facebook: safeUrl(config.facebookUrl), tiktok: safeUrl(config.tiktokUrl), linktree: safeUrl(config.linktreeUrl) };
     if (type === 'facebook' && !urls[type]) { link.hidden = true; return; }
