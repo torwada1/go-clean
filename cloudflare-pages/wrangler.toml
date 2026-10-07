@@ -1,1 +1,13 @@
-name = "gocleanco-bookings"\npages_build_output_dir = "./source/pages-dist"\ncompatibility_date = "2026-05-15"\ncompatibility_flags = ["nodejs_compat"]\n
+name = "gocleanco-bookings"
+pages_build_output_dir = "./source/pages-dist"
+compatibility_date = "2026-05-15"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "gocleanco-bookings-db"
+database_id = "85b20abc-3c97-498b-a486-e902109a537e"
+remote = true
+
+[vars]
+BOOKING_ENABLED = "false"
